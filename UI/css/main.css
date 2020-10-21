@@ -1,0 +1,180 @@
+/** core styles and body */
+:root {
+    --color1: #0A1C40;
+	--color2: #022840;
+    --color3: #023A40;
+    --color4: #F2E1C2;
+	--color5: #F2CDA0;
+    --color6: #8C6764;
+    --color7: orange;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/** sections */
+.sections {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(auto, auto));
+}
+
+/** navigation */
+nav {
+    background-color: var(--color1);
+    width: 100%;
+    height: 50px;
+    color: var(--color4);
+    position: fixed;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 8em auto;
+    column-gap: 1%;
+    z-index: 10;
+}
+nav .banner {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav .banner h4 {
+    height: 80%;
+    width: 80%;
+    margin: unset;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color5);
+    color: var(--color1);
+    border-radius: 5px;
+}
+nav .banner h4 span {
+    place-self: center;
+}
+nav ul {
+    margin: unset;
+    padding: unset;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(15%, 1fr));
+    justify-content: center;
+    place-content: center;
+}
+nav ul li {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+nav ul li:hover {
+    background-color: var(--color4);
+}
+nav li a {
+    font-size: 12px;
+    color: var(--color4);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+nav li a:hover {
+    color: var(--color1);
+}
+
+
+/** sections */
+.sections {
+    width: inherit;
+    display: grid;
+    grid-template-rows: repeat( auto-fill, minmax(auto-fill, 1fr));;
+}
+section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+/** home */
+#home {
+    display: grid;
+    grid-template-rows: 30%;
+    justify-content: center;
+    place-content: center;
+    background-image: url('../images/home-background.png');
+    background-attachment: scroll;
+    background-clip: content-box;
+}
+.home {
+    
+}
+#home h1 {
+    opacity: unset;
+    width: 100%;
+    color: #fff;
+}
+.myfullname {
+    font-size: 25px;
+}
+.profession {
+    font-size: 30px;
+}
+
+/** about */
+#about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#about div {
+    place-self: center;
+}
+#about .about h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--color7);
+    text-underline-position: var(--color3) below;
+}
+#about .about p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#about .profile-picture {
+    justify-content: center;
+    overflow-inline: unset;
+}
+
+/** skills */
+
+#skills {
+    display: grid;
+    grid-template-rows: 10% auto;
+}
+#skills h2 {
+    text-align: center;
+}
+#skills .skills {
+    background-color: var(--color5);
+    border-radius: 10px;
+    border: 1px orangered;
+    display: grid;
+    grid-template-rows: repeat( auto-fill, minmax(20%, 1fr));
+    column-gap: 5%;
+    grid-template-columns: repeat( auto-fill, minmax(30%, 1fr));
+    row-gap: 8%;
+}
+.skills .skill {
+    font-size: initial;
+}
+
+/** projects */
+#projects {
+    background-color: var(--color6);
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(30%, 1fr));
+    column-gap: 5%;
+    grid-template-rows: repeat( auto-fill, minmax(20%, 1fr));
+    row-gap: 5%;    
+    
+}
