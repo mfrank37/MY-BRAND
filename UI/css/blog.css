@@ -114,6 +114,12 @@ nav li a:hover {
     .article-year > h1 {
         font-size: 16px;
     }
+    .articles-board .article {
+        flex-flow: column-reverse;
+    }
+    .article .article-image {
+        width: 100%;
+    }
 }
 
 
