@@ -164,7 +164,7 @@ justify-content: center;
     flex-flow: column nowrap;
     justify-content: center;
 }
-.comments-section .add-comment > h5 {
+.comments-section .add-comment > h4 {
     color: var(--color3);
 }
 .add-comment .comment-form {
@@ -209,14 +209,45 @@ justify-content: center;
 .more-articles .article {
     padding-left: 20px;
 }
-
-
-
-
-
-.more-articles .article img {
-    max-width: 120px;
+.more-articles {
+    min-width: 250px;
+    max-width: 650px;
 }
+.more-articles > h2 {
+    color: var(--color3);
+}
+.more-articles .article {
+    color: var(--color9);
+    padding-left: 35px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.more-articles .article .article-image {
+    max-width: 100px;
+}
+.more-articles .article .article-image img {
+    max-width: 100px;
+    max-height: 60px;
+}
+.more-articles .article h3{
+    margin: unset;
+    text-decoration: underline;
+}
+.article .publish-date {
+    margin: unset;
+    text-decoration: unset;
+    color: rgba(120, 120, 120, 0.8);
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
     
@@ -272,6 +303,53 @@ justify-content: center;
     .responsive {
         visibility: hidden;
     }
+    /** article-view */
+    .article-view-section {
+        font-size: 17px;
+        padding: 15px;
+    }
+    .article-view-section .comments-section {
+        padding: unset;
+    }
+    .comments-section > h2 {
+        padding-left: 10px;
+    }
+    .article-view .header h1{
+        font-size: 20px;
+    }
+    .article-view .header p {
+        font-size: 14px;
+        margin-left: 50px;
+        margin-top: unset;
+        font-weight: 400;
+    }
+    .article-view .header .date {
+        font-weight: 700;
+    }
+    .more-articles .article .article-description h3{
+        font-size: 15px;
+    }
+    .more-articles {
+        margin: auto 10px auto 10px;
+    }
+    .more-articles > h2 {
+        font-size: 20px;
+    }
+    .more-articles .article {
+        flex-flow: column-reverse;
+    }
+    .article .article-image {
+        width: 100%;
+    }
+
+}
 
 
+@media screen and (max-width: 340px) {
+    .more-articles .article .article-description h3{
+        font-size: 12px;
+    }
+    .article .publish-date {
+        font-size: 11px;
+    }
 }
