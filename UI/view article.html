@@ -3,97 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
     <!------------ navigation -------------------->
     <nav class="nav">
-      <ul>
-            <li>ABOUT</li>
-            <li>SKILLS</li>
-            <li>PROJECTS</li>
-            <li>EXPERIENCE</li>
-            <li>CONTACT</li>
-            <li>BLOG</li>
+        <div class="banner">
+            Frank M
+        </div>
+        <ul class="topnav responsive" id="myTopnav">
+            <li>
+                <a href="index.html#about">ABOUT</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <li><a href="index.html#skills">SKILLS</a></li>
+            <li><a href="index.html#projects">PROJECTS</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
         </ul>
     </nav><!--navigation-->
-    
-    <div class="article view"> <!-- VIEW ARTICLE -->
-        <div class="header">
-            <h1>10 Pro tips for website security enhancing.</h1>
-            <p>Published: <span class="date">Oct 19, 2020</span>
-            </p>
-        </div>
-        <div class="article-image">
-            <img src="">
-        </div>
-        <article class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Vel, doloremque blanditiis quibusdam recusandae dolorum al
-            iquid modi pariatur dolores sit consequatur a repellendus
-             numquam cum quae itaque in ratione veritatis sequi!
-            
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-             Vel, doloremque blanditiis quibusdam recusandae dolorum al
-             iquid modi pariatur dolores sit consequatur a repellendus
-              numquam cum quae itaque in ratione veritatis sequi!
-             
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Vel, doloremque blanditiis quibusdam recusandae dolorum al
-              iquid modi pariatur dolores sit consequatur a repellendus
-               numquam cum quae itaque in ratione veritatis sequi!
+    <main class="article-view-section">
+
+         <!-- VIEW ARTICLE -->
+        <article class="article-view">
+            <div class="header">
+                <h1>10 Pro tips for website security enhancing.</h1>
+                <p>
+                    Published: <span class="date">Oct 19, 2020</span>
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="images/home-background.png">
+            </div>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                
+            </div>
         </article>
-    </div>
 
-    <div class="comments"> <!-- COMMENTS SECTION -->
+        <!-- COMMENTS SECTION -->
+        <div class="comments-section">
+            
+            <h2>Comments</h2>
+            <div class="comments">
+                <div class="comment">
+                    <h5>
+                        John Doe - <span class="date">Oct 18, 2020</span>
+                    </h5>
+                    <p>
+                        I really enjoyed this article. 
+                        I totally agree with you 100% on the paragraph 2,
+                        but why does it have to be .......... one the paragraph 3. 
+                        I just think it would a good idea to ....
+                    </p>
+                </div>
+                <div class="comment">
+                    <h5>John Doe - <span class="date">Oct 18, 2020</span>
+                    </h5>
+                    <p>I really enjoyed this article. 
+                        I totally agree with you 100% on the paragraph 2,
+                        but why does it have to be .......... one the paragraph 3. 
+                        I just think it would a good idea to ....
+                    </p>
+                </div>
+            </div>
+            <div class="add-comment"><!-- new comment -->
+                <h5>Say something</h5>
+                <form class="comment-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="name" autocomplete="name" minlength="2" required>
+                    <textarea name="comment" placeholder="comment or message..." minlength="3" maxlength="500" required></textarea>
+                    <button type="submit">post</button>
+                </form>
+            </div>
+
+        </div>
         
-        <h2>Comments</h2>
-        
-        <div class="comment">
-            <h4>John Doe - <span class="date">Oct 18, 2020</span>
-            </h4>
-            <p>I really enjoyed this article. 
-                I totally agree with you 100% on the paragraph 2,
-                but why does it have to be .......... one the paragraph 3. 
-                I just think it would a good idea to ....
-            </p>
-        </div>
-        <div class="comment">
-            <h4>John Doe - <span class="date">Oct 18, 2020</span>
-            </h4>
-            <p>I really enjoyed this article. 
-                I totally agree with you 100% on the paragraph 2,
-                but why does it have to be .......... one the paragraph 3. 
-                I just think it would a good idea to ....
-            </p>
-        </div>
-        <div class="add-comment"><!-- new comment -->
-            <h4>Say something</h4>
-            <form class="add-comment" action="#" method="POST">
-                <input type="text" name="name" placeholder="name" autocomplete="name">
-                <textarea name="comment" placeholder="comment or message..." minlength="3" maxlength="500"></textarea>
-                <button type="submit">post</button>
-            </form>
-        </div>
-
-    </div>
-
-    <div class="more-articles"><!-- articles here should me more like from HOME page (landing page) but less spacious -->
-        <div class="article">
-            <h2>10 Pro tips for website security enhancing</h2>
-            <h2 class="publish-date">Published<span>October 11</span></h2>
-            <div class="article-image">
-                <img src="article-image.jpg" width="20%" height="100%">
+        <!-- articles here should be more like from BLOG (blog page) but less spacious -->
+        <div class="more-articles">
+            <h3>You may also like to read</h3>
+            <div class="article">
+                <h2>10 Pro tips for website security enhancing</h2>
+                <h2 class="publish-date">Published<span>October 11</span></h2>
+                <div class="article-image">
+                    <img src="images/home-background.png" alt="article - cover">
+                </div>
+            </div>
+            <div class="article">
+                <h2>10 Pro tips for website security enhancing</h2>
+                <h2 class="publish-date">Published<span>October 11</span></h2>
+                <div class="article-image">
+                    <img src="images/home-background.png" alt="article - cover">
+                </div>
             </div>
         </div>
-        <div class="article">
-            <h2>10 Pro tips for website security enhancing</h2>
-            <h2 class="publish-date">Published<span>October 11</span></h2>
-            <div class="article-image">
-                <img src="article-image.jpg" width="20%" height="100%">
-            </div>
-        </div>
-    </div>
+    </main>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
