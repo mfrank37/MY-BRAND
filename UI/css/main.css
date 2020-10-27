@@ -21,6 +21,9 @@ html, body {
 button {
     cursor: pointer;
 }
+input, button, hr {
+    border: unset;
+}
 
 
 
@@ -133,6 +136,12 @@ nav li a:hover {
     align-items: center;
     row-gap: 10px;
 }
+.about hr {
+    margin-top: 0px;
+    height: 2px;
+    max-width: 250px;
+    background-color: orangered;
+}
 .profile-picture {
     display: flex;
     align-content: center;
@@ -143,8 +152,6 @@ nav li a:hover {
 }
 .about .about-me h1 {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--color7);
     color: var(--color3);
 }
 .about .about-me p {
@@ -405,7 +412,7 @@ nav li a:hover {
     font-size: 18px;
 }
 .contacts-ask input, .ask-form textarea {
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: var(--color9);
     outline: unset;
     color: white;
@@ -425,7 +432,7 @@ nav li a:hover {
     color: var(--color10);
 }
 .ask-me .ask-form button {
-    border-radius: 5px;
+    border-radius: 3px;
     height: 50px;
     background-color: var(--color11);
     color: white;
@@ -539,21 +546,22 @@ nav li a:hover {
         margin-right: 10px;
     }
         /* toggle navbar */
-    .hide:first-child {
+    .responsive:first-child {
         visibility: visible;
         position: fixed;
         top: 5px;
         right: 5px;
         z-index: 100;
     }
-    .hide .fa-bars {
+    .responsive .fa-bars {
         visibility: visible;
-        display: block;
+        background-color: var(--color1);
+        color: var(--color4);
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top: initial;
+        right: initial;
     }
-    .hide {
+    .responsive {
         visibility: hidden;
     }
 
@@ -681,13 +689,3 @@ nav li a:hover {
         color: #F2CDA0;
     }
 }
-
-
-
-
-
-/** animations */
-
-
-
-
