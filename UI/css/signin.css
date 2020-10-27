@@ -20,6 +20,7 @@ html, body {
 }
 button {
     cursor: pointer;
+    border: unset;
 }
 .nav {
     display: flex;
@@ -49,6 +50,8 @@ button {
     margin: auto;
     text-decoration: none;
     color: var(--color4);
+    position: absolute;
+    left: 47%;
 }
 .nav > a:hover {
     color: var(--color1);
@@ -58,7 +61,7 @@ button {
     min-height: 300px;
     max-width: 300px;
     background-color: var(--color1);
-    color: var(--color5);
+    color: var(--color4);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -66,28 +69,44 @@ button {
     margin: 30px auto auto auto;
     border-radius: 10px;
 }
+.signin-form > h2 {
+    margin-bottom: unset;
+    margin-top: unset;
+    font-weight: 500;
+}
 .signin-form hr {
-    background-color: orangered;
-    height: 1px;
+    background-color: var(--color4);
+    height: 0.5px;
+    width: 90%;
+    padding: unset;
+    border: unset;
     margin-top: 0px;
 }
 .signin-form input {
+    display: inline;
     height: 35px;
     width: 80%;
-    background-color: var(--color9);
-    color: white;
+    background-color: white;
+    color: var(--color3);
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 2px;
     padding-left: 15px;
+    border: unset;
 }
 .signin-form input::placeholder {
-    color: var(--color10);
+    color: grey;
 }
 .signin-form label [type="checkbox"] {
     height: 13px;
+    max-width: 20px;
 }
 .signin-form label {
-    font-size: 14px;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    color: var(--color9);
+    min-width: 70%;
+    align-items: center;
 }
 .signin-form button {
     height: 35px;
@@ -95,6 +114,5 @@ button {
     border-radius: 5px;
     background-color: var(--color11);
     color: white;
-    font-weight: 700;
     font-size: 18px;
 }
