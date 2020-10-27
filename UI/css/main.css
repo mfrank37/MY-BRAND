@@ -21,6 +21,9 @@ html, body {
 button {
     cursor: pointer;
 }
+input, button, hr {
+    border: unset;
+}
 
 
 
@@ -133,6 +136,12 @@ nav li a:hover {
     align-items: center;
     row-gap: 10px;
 }
+.about hr {
+    margin-top: 0px;
+    height: 2px;
+    max-width: 250px;
+    background-color: orangered;
+}
 .profile-picture {
     display: flex;
     align-content: center;
@@ -143,8 +152,6 @@ nav li a:hover {
 }
 .about .about-me h1 {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--color7);
     color: var(--color3);
 }
 .about .about-me p {
