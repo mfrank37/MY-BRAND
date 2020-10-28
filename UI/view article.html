@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Frank MUNGERI - FullStack Web Developer</title>
+</head>
+<body>
+    <!------------ navigation -------------------->
+    <nav class="nav">
+        <div class="banner">
+            Frank M
+        </div>
+        <ul class="topnav responsive" id="myTopnav">
+            <li>
+                <a href="index.html#about">ABOUT</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <li><a href="index.html#skills">SKILLS</a></li>
+            <li><a href="index.html#projects">PROJECTS</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+        </ul>
+    </nav><!--navigation-->
+    <main class="article-view-section">
+
+         <!-- VIEW ARTICLE -->
+        <article class="article-view">
+            <div class="header">
+                <h1>10 Pro tips for website security enhancing.</h1>
+                <p>
+                    Published: <span class="date">Oct 19, 2020</span>
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="images/home-background.png">
+            </div>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
+                    iquid modi pariatur dolores sit consequatur a repellendus
+                    numquam cum quae itaque in ratione veritatis sequi!
+                </p>
+                
+            </div>
+        </article>
+
+        <!-- COMMENTS SECTION -->
+        <div class="comments-section">
+            
+            <h2>Comments</h2>
+            <div class="comments">
+                <div class="comment">
+                    <h5>
+                        John Doe - <span class="date">Oct 18, 2020</span>
+                    </h5>
+                    <p>
+                        I really enjoyed this article. 
+                        I totally agree with you 100% on the paragraph 2,
+                        but why does it have to be .......... one the paragraph 3. 
+                        I just think it would a good idea to ....
+                    </p>
+                </div>
+                <div class="comment">
+                    <h5>John Doe - <span class="date">Oct 18, 2020</span>
+                    </h5>
+                    <p>I really enjoyed this article. 
+                        I totally agree with you 100% on the paragraph 2,
+                        but why does it have to be .......... one the paragraph 3. 
+                        I just think it would a good idea to ....
+                    </p>
+                </div>
+            </div>
+            <div class="add-comment"><!-- new comment -->
+                <h4>Say something</h4>
+                <form class="comment-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="name" autocomplete="name" minlength="2" required>
+                    <textarea name="comment" placeholder="comment or message..." minlength="3" maxlength="500" required></textarea>
+                    <button type="submit">post</button>
+                </form>
+            </div>
+
+        </div>
+        
+        <!-- articles here should be more like from BLOG (blog page) but less spacious -->
+        <div class="more-articles">
+            <h2>You may also like to read</h2>
+            <a class="article" href="#">
+                <div class="article-description">
+                    <h3>10 Pro tips for website security enhancing that every developer should see</h3>
+                    <h5 class="publish-date">Published <span>October 5 </span></h5>
+                </div>
+                <div class="article-image">
+                    <img src="images/home-background.png" alt="image">
+                </div>
+            </a>
+            <a class="article" href="#">
+                <div class="article-description">
+                    <h3>10 Pro tips for website security enhancing that every developer should see</h3>
+                    <h5 class="publish-date">Published <span>October 5 </span></h5>
+                </div>
+                <div class="article-image">
+                    <img src="images/home-background.png" alt="image">
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
