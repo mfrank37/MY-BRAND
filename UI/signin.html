@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank MUNGERI - SignIn</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <title>Frank MUNGERI - Signin</title>
 </head>
 <body>
     <!------------ navigation -------------------->
@@ -11,22 +12,18 @@
         <div class="banner">
             Frank M
         </div>
-        <ul>
-            <li>HOME</li>
-        </ul>
+        <a href="index.html">HOME</a>
     </nav><!--navigation-->
     
-    <form class="form sign-in" method="POST" action="#"><!-- Sign In Form-->
-
+    <form class="signin-form" method="POST" action="admin.html"><!-- Sign In Form-->
         <h2>signin</h2>
-
-        <input type="email" required autocomplete="email" name="email" placeholder="email">
+        <hr width="150px" />
+        <input type="email" required autocomplete="email" name="email" placeholder="email" autofocus>
         <input type="password" required name="password" placeholder="password">
-        <label for="remember-me">
-            <input type="checkbox" value='true' id="remember-me">Remember me.
+        <label>
+            <input type="checkbox" id="remember-me" name="remember-me"><span>Remember me.</span>
         </label>
-        <button type="submit">Sign in</button>
-
+        <button type="submit">signin</button>
     </form>
 
 </body>
