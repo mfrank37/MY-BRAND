@@ -88,6 +88,73 @@ nav li a:hover {
 
 
 
+/** create-article-section */
+.create-article-section {
+    max-width: 750px;
+    margin: auto;
+    background-color: var(--color10);
+    color: var(--color9);
+    font-size: 20px;
+    font-weight: 100;
+    font-size: 1.3rem;
+    font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;;
+    line-height: 1.4;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.create-article-section > hr {
+    height: 3px;
+    background-color: var(--color1);
+}
+.create-article-section .create-article-form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+}
+.create-article-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.create-article-form textarea, .create-article-form input {
+    font-weight: 100;
+    font-size: 1.3rem;
+    font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;;
+    line-height: 1.4;
+}
+.create-article-form textarea::placeholder, .create-article-form input::placeholder {
+    color: var(--color8);
+}
+.create-article-form textarea {
+    padding: 15px;
+    resize: vertical;
+    display: block;
+    min-height: 30vh;
+}
+.create-article-form input[type="text"] {
+    height: 40px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+.create-article-buttons .publish-btn {
+    border-radius: 3px;
+    background-color: var(--color11);
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 15px;
+    float: right;
+    width: 150px;
+    height: 40px;
+}
+
+
+
+
+
 @media screen and (max-width: 800px) {
     
     /** navigation */
