@@ -151,9 +151,148 @@ nav li a:hover {
     height: 40px;
 }
 
-
-
-
+/** view-articles-page */
+.view-articles-section {
+    max-width: 900px;
+    margin: auto;
+    background-color: var(--color10);
+    color: var(--color9);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.view-articles-section > hr {
+    height: 3px;
+    background-color: var(--color1);
+}
+.all-articles {
+    width: 100%;
+}
+.all-articles .article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding:  1px;
+    margin-top: 5px;
+}
+.all-articles .article:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.all-articles .article .article-text {
+    margin-right: auto;
+}
+.all-articles .article .article-text > * {
+    margin: unset;
+    height: 1.3em;
+    overflow: hidden;
+}
+.all-articles .article .article-text .details {
+    font-size: 14px;
+    color: var(--color3);
+    font-weight: 600;
+    padding-left: 5%;
+}
+.all-articles .article .cover-image {
+    margin: auto;
+    margin-right: 10px;
+}
+.all-articles .article .cover-image img {
+    max-width: 135px;
+    max-height: 70px;
+}
+.all-articles .article .btns {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+.all-articles .article .btns > * {
+    display: block;
+    max-height: 25px;
+    min-width: 125px;
+    margin: 2px;
+    font-size: 18px;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.all-articles .article .btns a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: cadetblue;
+    font-weight: 400;
+    text-decoration: none;
+}
+.all-articles .article .btns .update {
+    background: var(--color11);
+}
+.all-articles .article .btns .delete {
+    background: #BF2806;
+}
+    /* confirm delete */
+.confirm-delete-section {
+    height: 98vh;
+    width: 98vw;
+    top: 0%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--color1);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+.confirm-delete-section > * {
+    text-align: center;
+}
+.confirm-delete-section > h4 {
+    color: var(--color7);
+    letter-spacing: 0.1em;
+}
+.confirm-delete-section > h2 {
+    color: white;
+}
+.confirm-delete-section > p {
+    color: var(--color11);
+}
+.delete-form .confirm-delete {
+    color: var(--color9);
+    margin-bottom: 15%;
+}
+.delete-form .big-delete-btn {
+    height: 50px;
+    width: 60vw;
+    color: white;
+    font-size: 2em;
+    background: #BF2806;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+}
+.confirm-delete-section .confirm-delete, .confirm-delete-section .confirm-delete button {
+    display: block;
+}
+.confirm-delete-section .cancel-delete {
+    width: 5vw;
+    height: 5vw;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    color: #BF2806;
+    font-weight: 600;
+    margin-right: 5vw;
+    align-self: flex-end;
+    background: var(--color4);
+}
+.view-articles-section .hide {
+    display: none;
+}
 
 @media screen and (max-width: 800px) {
     
@@ -215,7 +354,30 @@ nav li a:hover {
         visibility: hidden;
     }
 
+    /** view-articles-section */
+    .all-articles .article .article-text {
+        max-width: unset;
+        margin: unset;
+        justify-self: stretch;
+    }
+    .all-articles .article {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .all-articles .article .cover-image {
+        margin: unset;
+        margin-right: auto;
+    }
+    .all-articles .article .btns {
+        margin-left: auto;
+    }
 
-
-
+        /* confirm-delete-section */
+    .delete-form .big-delete-btn {
+        font-size: 1.2em;
+    }
+    .confirm-delete-section > h2 {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+    }
 }
