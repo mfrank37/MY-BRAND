@@ -294,6 +294,10 @@ nav li a:hover {
     display: none;
 }
 
+
+
+
+
 @media screen and (max-width: 800px) {
     
     /** navigation */
@@ -380,4 +384,5 @@ nav li a:hover {
         font-size: 18px;
         letter-spacing: 0.05em;
     }
+  
 }
