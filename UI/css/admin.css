@@ -294,6 +294,47 @@ nav li a:hover {
     display: none;
 }
 
+/** questions-section */
+.questions-section {
+    margin: auto;
+    max-width: 730px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--color9);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background: var(--color10);
+}
+.all-questions {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(100, 100, 150, 0.1);
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.question {
+    padding: 5px;
+    border-bottom: 2px solid rgba(100, 100, 150, 0.4);
+    color: var(--color2);
+    border-radius: 5px;
+}
+.questions-section .question > * {
+    margin: unset;
+    padding-left: 15px;
+}
+.all-questions .question .date {
+    font-weight: 400;
+}
+.questions-section .question h4 {
+    padding: unset;
+}
 
 
 
