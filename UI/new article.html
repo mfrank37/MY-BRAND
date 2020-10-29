@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Frank MUNGERI - FullStack Web Developer</title>
+</head>
+<body>
+    <!------------ navigation -------------------->
+    <nav class="nav">
+        <div class="banner">
+            Frank M
+        </div>
+        <ul class="topnav responsive" id="myTopnav">
+            <li><a href="admin.html">HOME</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="#">CREATE POST</a></li>
+            <li><a href="questions.html">QUESTIONS</a></li>
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="signin.html">SIGNOUT</a></li>
+        </ul>
+        <div class="admin-profile" onclick="toggleNav()">
+            <img src="images/profile_everywhere.jpg" alt="Profile picture icon">
+        </div>
+    </nav><!--navigation-->
+    <main class="create-article-section">
+        
+        <h2>Create article</h2>
+        <hr width="250px">
+        
+        <form class="create-article-form" action="#" method="POST">
+            <label for="article-title">
+                <span>Article title:</span>
+                <input id="article-title" type="text" minlength="2" name="article-title" placeholder="Title of the new article ..." autofocus>
+            </label>
+            
+            <label for="add-cover-image">
+                <span>Select cover image:</span>
+                <input type="file" src="images/c++.png">
+            </label>
+            <label for="article-body">
+                <span>Description:</span>
+                <textarea id="article-body" name="article-body" minlength="5" placeholder="description of the new article ..."></textarea>
+            </label>
+            <div class="create-article-buttons">
+                <button type="submit" class="publish-btn">Publish</button>
+            </div>
+        </form>
+
+    </main>
+<script src="js/script.js"></script>
+</body>
+</html>
