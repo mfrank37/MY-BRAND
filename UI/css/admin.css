@@ -139,7 +139,7 @@ nav li a:hover {
     padding-left: 15px;
     font-weight: 600;
 }
-.create-article-buttons .publish-btn {
+.create-article-buttons .publish-btn, .create-article-buttons .update-btn {
     border-radius: 3px;
     background-color: var(--color11);
     color: white;
@@ -149,6 +149,16 @@ nav li a:hover {
     float: right;
     width: 150px;
     height: 40px;
+}
+
+/** update article - most for the feature(page) are from .create-article-section */
+.create-article-form label img {
+    max-height: 100%;
+    max-width: 100%;
+    align-self: flex-end;
+}
+.create-article-buttons .update-btn {
+    background-color: #008b80;
 }
 
 /** view-articles-page */
