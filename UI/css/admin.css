@@ -88,6 +88,286 @@ nav li a:hover {
 
 
 
+/** update-profile-page */
+.update-profile-section {
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--color10);
+    color: var(--color9);
+    font-size: 1.1rem;
+    font-family: Charlie Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;;
+    line-height: 1.4;
+    padding: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.add-skill input[type="text"],
+.add-project input[type="text"],
+.add-experience input[type="text"],
+label input, label textarea{
+    max-width: 98%;
+}
+.update-profile-section .update-profile-form {
+    border: 3px solid ;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    max-width: 98%;
+}
+.update-profile-form > h3 {
+    border-top: 1px solid #008b80;
+    padding-top: 15px;
+}
+.update-profile-form h3:first-of-type {
+    border-top: unset;
+    margin: unset;
+}
+.update-profile-form textarea {
+    font: inherit;
+}
+.update-profile-section .update-profile-form input, .update-profile-form textarea {
+    height: 30px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: inherit;
+}
+.update-profile-section .update-profile-form input::placeholder {
+    color: var(--color8);
+}
+    /* fullname , about & profile picture */
+.update-profile-form .full-name {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 7px;
+}
+.update-profile-form .full-name > * {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 45%;
+}
+.update-profile-form .profession-about {
+    margin-bottom: 7px;
+}
+.update-profile-form .profession-about textarea {
+    min-height: 100px;
+    resize: none;
+}
+.update-profile-form .profile-picture {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.update-profile-form .profile-picture > * {
+    max-width: 100%;
+}
+.profile-picture img {
+    width: 400px;
+}
+    /* skills */
+.skills .current-skills {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(100px, 120px));
+    row-gap: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 25px auto 25px auto;
+}
+.skills .current-skills .skill {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100px;
+    height: 110px;
+    background-color: #ffffff;
+    border-style: groove;
+    border-radius: 3px;
+    box-shadow: 3px 1px 20px 0px grey;
+}
+.skills .current-skills .skill img{
+    min-width: 90px;
+    max-width: 100%;
+}
+.skills .current-skills .skill h4 {
+    background-color: var(--color6);
+    color: var(--color4);
+    font-size: 12px;
+    text-align: center;
+    padding-top: unset;
+    margin: unset;
+}
+.skills .current-skills .skill button {
+    background-color: #BF2806;
+    color: white;
+}
+.add-skill {
+    margin-bottom: 35px;
+}
+    /* projects */
+.projects .projects-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 155px));
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 10px 8px;
+    margin-bottom: 15px;
+}
+.projects .projects-board .project {
+    display: flex;
+    flex-flow: column;
+    height: 113px;
+    width: 150px;
+    justify-content: start;
+    background-color: var(--color2);
+    font-weight: 500;
+    color: var(--color4);
+    text-align: center;
+    box-shadow: 1px 1px 15px 1px var(--color9);
+}
+.projects .project img {
+    max-width: 100%;
+}
+.projects-board .project .project-title {
+    background-color: var(--color3);
+    color: var(--color4);
+    margin: unset;
+    padding: unset;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+}
+.project button {
+    background-color: #BF2806;
+    color: white;
+}
+.add-project {
+    margin-bottom: 35px;
+}
+    /* experiences */
+.experience-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(165px, 170px));
+    gap: 20px 20px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.experience-board .experience {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: white;
+    width: 165px;
+    height: 157px;
+    font-weight: 400;
+    color: var(--color1);
+    font-size: 14px;
+    box-shadow: 2px -1px 15px -3px grey;
+}
+.experience-board img {
+    max-width: 80%;
+    height: 80px;
+}
+.experience h4 {
+    margin: auto;
+    margin-bottom: unset;
+    margin-top: unset;
+    height: 20px;
+}
+.experience-board .lifetime {
+    font-weight: 200;
+    font-size: 11px;
+    color: var(--color9);
+}
+.experience .company {
+    font-weight: 500;
+}
+.experience button {
+    width: 100%;
+    background-color: #BF2806;
+    color: white;
+}
+.add-experience {
+    margin-bottom: 35px;
+}
+    /* social-links */
+.social-links .contact-social {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-links .contact-list {
+    margin: auto auto auto 20px;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    letter-spacing: 0.1em;
+}
+.social-links .contact-list > * {
+    display: flex;
+    align-items: center;
+}
+.contact-list img {
+    max-width: 40px;
+    max-height: 40px;
+}
+.contact-list .link {
+    display: flex;
+    flex-flow: column;
+    margin-left: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color3);
+}
+.link button {
+    width: 70px;
+    height: 20px;
+    background-color: #BF2806;
+    color: white;
+}
+.contact-social .address {
+    align-self: center;
+    margin: auto;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgba(100, 100, 150, 0.4);
+}
+.contact-social .address span{
+    color: var(--color9);
+    letter-spacing: 0.04em;
+}
+    /* add-new buttons */
+.add-new-skill,
+.add-new-project,
+.add-new-experience,
+.add-new-link {
+    float: right;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 25px;
+    background-color: var(--color9);
+}
+    /* update button */
+.update-profile-form .update-button {
+    float: right;
+}
+.update-profile-form .update-btn {
+    border-radius: 3px;
+    background-color: var(--color11);
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 35px;
+    width: 150px;
+    height: 40px;
+    background-color: #008b80;
+}
+
 /** create-article-section */
 .create-article-section {
     max-width: 750px;
@@ -426,4 +706,17 @@ nav li a:hover {
         letter-spacing: 0.05em;
     }
   
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+        
+    .update-profile-form .full-name {
+        flex-flow: column nowrap;
+    }
+    .update-profile-form .full-name > * {
+        width: 95%;
+    }
 }
