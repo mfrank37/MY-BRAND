@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Frank MUNGERI - FullStack Web Developer</title>
+</head>
+<body>
+    <!------------ navigation -------------------->
+    <nav class="nav">
+        <div class="banner">
+            Frank M
+        </div>
+        <ul class="topnav responsive" id="myTopnav">
+            <li><a href="admin.html">HOME</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="new article.html">CREATE POST</a></li>
+            <li><a href="questions.html">QUESTIONS</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="signin.html">SIGNOUT</a></li>
+        </ul>
+        <div class="admin-profile" onclick="toggleNav()">
+            <img src="images/profile_everywhere.jpg" alt="Profile picture icon">
+        </div>
+    </nav><!--navigation-->
+
+    <main class="update-profile-section">
+        
+        <h2>Profile</h2>
+        <!-- This form contains everything on the website -->
+        <form class="update-profile-form" action="#" method="POST">
+            
+            <!-- Names -->
+            <h3>Names</h3>
+            <div class="full-name">
+                <label for="first-name">
+                    <span>First name:</span>
+                    <input id="first-name" type="text" minlength="2" name="first-name" placeholder="first-name">
+                </label>
+                <label for="last-name">
+                    <span>Last name:</span>
+                    <input id="last-name" type="text" minlength="2" name="last-name" placeholder="last-name">
+                </label>
+            </div>
+            
+            <!-- Profession & About -->
+            <h3>Profession & About</h3>
+            <div class="profession-about">
+                <label for="profession">
+                    <span>Profession:</span>
+                    <input id="profession" type="text" minlength="2" name="profession" placeholder="Profession or Work">
+                </label>
+                <label for="about">
+                    <span>About:</span>
+                    <textarea id="about" minlength="2" name="about" placeholder="I am a professional ... "></textarea>
+                </label>
+            </div>
+           
+            <!-- Profile picture -->
+            <h3>Profile picture</h3>
+            <div class="profile-picture">
+                <p>Current profile picture</p>
+                <img src="images/profile_everywhere.jpg" alt="current profile picture">
+                <label for="open-profile-picture">
+                    <span>open new</span>
+                    <input type="file" id="open-profile-picture" name="open-profile-picture" class="open-profile-picture" accept="image/png, image/jpeg">
+                </label>
+            </div>
+
+            <!-- skills -->
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="current-skills">
+                
+                    <div class="skill">
+                        <img alt="HTML5" src='images/skills/html5.png'>
+                        <h4>HTML5</h4>
+                        <button>remove</button>
+                    </div>
+                   <div class="skill">
+                        <img alt="CSS3" src='images/skills/css3-logo.png'>
+                        <h4>CSS3</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="skill">
+                        <img alt="JAVASCRIPT" src='images/skills/javascript.png'>
+                        <h4>JAVASCRIPT</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="skill">
+                        <img alt="C++" src='images/skills/c++.png'>
+                        <h4>C++</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="skill">
+                        <img alt="PYTHON3" src='images/skills/python.png'>
+                        <h4>PYTHON3</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="skill">
+                        <img alt="REACT" src='images/skills/react.png'>
+                        <h4>REACT</h4>
+                        <button>remove</button>
+                    </div>
+                    
+                </div>
+                <div class="add-skill">
+                    <h5>Add skill</h5>
+                    <label for="skill-logo">
+                        <span>Choose skill logo:</span>
+                        <input type="file" id="skill-logo" name="skill-logo">
+                    </label>
+                    <label for="skill-name">
+                        <span>Skill name:</span>
+                        <input type="text" id="skill-name" name="skill-name" placeholder="skill-name">
+                    </label>
+                    <button id="add-new-skill" class="add-new-skill">Add new skill</button>
+                </div>
+            </div>
+
+            <!-- project -->
+            <h3>Projects</h3>
+            <div class="projects">
+                <div class='projects-board'>
+                
+                    <div class="project">
+                        <img src="images/projects/battery-status.png" alt="BATTERY STATUS">
+                        <h3 class='project-title'>BATTERY STATUS</h3>
+                        <button>remove</button>
+                    </div>
+                    <div class="project">
+                        <img src="images/projects/city-info.png" alt="CITY INFO">
+                        <h3 class='project-title'>CITY INFO</h3>
+                        <button>remove</button>
+                    </div>
+                    <div class="project">
+                        <img src="images/projects/tasks-manager.png" alt="TASKS MANAGER">
+                        <h3 class='project-title'>TASKS MANAGER</h3>
+                        <button>remove</button>
+                    </div>
+                    <div class="project">
+                        <img src="images/projects/animal-survey.png" alt="ANIMAL SURVEYOR">
+                        <h3 class='project-title'>ANIMAL SURVEY</h3>
+                        <button>remove</button>                        
+                    </div>
+                    <div class="project">
+                        <img src="images//projects/auto-meet.png" alt="AUTO-MEET">
+                        <h3 class='project-title'>AUTO-MEET</h3>
+                        <button>remove</button>
+                    </div>
+                    <div class="project">
+                        <img src="images/projects/solar-view.png" alt="SOLAR VIEW">
+                        <h3 class='project-title'>SOLAR VIEW</h3>
+                        <button>remove</button>
+                    </div>
+                    
+                </div>
+                <div class="add-project">
+                    <h5>Add project</h5>
+                    <label for="project-logo">
+                        <span>Choose project logo:</span>
+                        <input type="file" id="project-logo" name="project-logo">
+                    </label>
+                    <label for="project-name">
+                        <span>Project name:</span>
+                        <input type="text" id="project-name" name="project-name" placeholder="project-name">
+                    </label>
+                    <label for="project-description">
+                        <span>Project description:</span>
+                        <input type="text" id="project-description" name="project-description" placeholder="project-description">
+                    </label>
+                    <button id="add-new-project" class="add-new-project">Add new project</button>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <h3>Experiences</h3>
+            <div class="experiences">
+                <div class='experience-board'>
+                    <div class="experience">
+                        <img src="images/experience/andela-logo.jpg" alt="Andela">
+                        <h4 class="lifetime">Sept 2020 - Present</h4>
+                        <h4 class='position'>FullStack Web developer</h4>
+                        <h4 class="company"> at Andela</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="experience">
+                        <img src="images/experience/linkedIn.png" alt="LinkedIn">
+                        <h4 class="lifetime">Jan - Aug 2020</h4>
+                        <h4 class='position'>Front-end developer</h4>
+                        <h4 class="company"> at LinkedIn</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="experience">
+                        <img src="images/experience/facebook.png" alt="Facebook">
+                        <h4 class="lifetime">Jan-Dec 2019</h4>
+                        <h4 class='position'>React developer</h4>
+                        <h4 class="company"> at Facebook</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="experience">
+                        <img src="images/experience/facebook.png" alt="Facebook">
+                        <h4 class="lifetime">Feb-Dec 2018</h4>
+                        <h4 class='position'>Designer</h4>
+                        <h4 class="company"> at Facebook</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="experience">
+                        <img src="images//experience/twitter.png" alt="Twitter">
+                        <h4 class="lifetime">2016-2018</h4>
+                        <h4 class='position'>Back-End developer</h4>
+                        <h4 class="company"> at Twitter</h4>
+                        <button>remove</button>
+                    </div>
+                    <div class="experience">
+                        <img src="images/experience/github.png" alt="GitHub">
+                        <h4 class="lifetime">2013 - 2015</h4>
+                        <h4 class='position'>Back-End developer</h4>
+                        <h4 class="company"> at GitHub</h4>
+                        <button>remove</button>
+                    </div>    
+                </div>
+                <div class="add-experience">
+                    <h5>Add experience</h5>
+                    <label for="experience-logo">
+                        <span>Choose experience logo:</span>
+                        <input type="file" id="experience-logo" name="experience-logo">
+                    </label>
+                    <label for="experience-lifetime">
+                        <span>Experience lifetime:</span>
+                        <input type="text" id="experience-lifetime" name="experience-lifetime" placeholder="experience-lifetime">
+                    </label>
+                    <label for="experience-position">
+                        <span>Experience position:</span>
+                        <input type="text" id="experience-position" name="experience-position" placeholder="experience-position">
+                    </label>
+                    <label for="experience-company">
+                        <span>Experience company:</span>
+                        <input type="text" id="experience-company" name="experience-company" placeholder="experience-company">
+                    </label>
+                    <button id="add-new-experience" class="add-new-experience">Add new experience</button>
+                </div>
+            </div>
+
+            <!-- Social links & Address -->
+            <h3>Social links & Address</h3>
+            <div class="social-links">
+
+                <div class='contact-list'>
+                    <div class="contact">
+                        <a href='mailto:frankm@frankm.com'><img src="images/contacts/mail.png"></a>
+                        <a class="link" href='mailto:frankm@frankm.com'>
+                            <span>frankm@frankm.com</span>
+                            <button>remove</button>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href='https://www.linkedin.com/in/mungeri-frank-13544a185/'><img src="images/contacts/linkedIn.png"></a>
+                        <a class="link" href='https://www.linkedin.com/in/mungeri-frank-13544a185/'>
+                            <span>linkedin.com/in/mungeri-frank-13544a185/</span>
+                            <button>remove</button>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href='https://github.com/mfrank37'><img src="images/contacts/github.png"></a>
+                        <a class="link" href='https://github.com/mfrank37'>
+                            <span>github.com/mfrank37</span>
+                            <button>remove</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- add new link -->
+                <div class="add-link">
+                    <h5>Add link</h5>
+                    <label for="link-icon">
+                        <span>add link logo</span>
+                        <input type="file" id="link-icon" name="link-icon" class='link-icon'>
+                    </label>
+                    <label for="url">
+                        <span>add link url</span>
+                        <input type="url" id="url" name="url" class="url">
+                    </label>
+                    <button id="add-new-link" class="add-new-link">Add new link</button>
+                </div>
+
+                <!-- email & telephone -->
+                <div class="email-telephone">
+                    <h5>Email & Telephone</h5>
+                    <label for="email">
+                        <span>Email:</span>
+                        <input id="email" type="email" minlength="2" name="email" placeholder="email">
+                    </label>
+                    <label for="telephone">
+                        <span>Telephone:</span>
+                        <input id="telephone" type="tel" minlength="2" name="telephone" placeholder="telephone">
+                    </label>
+                </div>
+    
+                <!-- Address -->
+                <div class="address">
+                    <h5>Address</h5>
+                    <label for="country">
+                        <span>Country:</span>
+                        <input id="country" type="text" minlength="2" name="country" placeholder="country">
+                    </label>
+                    <label for="address">
+                        <span>City or State:</span>
+                        <input id="address" type="text" minlength="2" name="address" placeholder="address">
+                    </label>
+                </div>
+            </div>
+
+            <!-- update button -->
+            <div class="update-button">
+                <button type="submit" class="update-btn">Update</button>
+            </div>
+
+        </form>
+
+    </main>
+<script src="js/script.js"></script>
+</body>
+</html>
