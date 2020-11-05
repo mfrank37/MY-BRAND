@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/admin.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+
     <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
@@ -29,15 +49,15 @@
         <h2>Create article</h2>
         <hr width="250px">
         
-        <form class="create-article-form" action="#" method="POST">
+        <form id="add-article" class="create-article-form" action="" method="POST">
             <label for="article-title">
                 <span>Article title:</span>
                 <input id="article-title" type="text" minlength="2" name="article-title" placeholder="Title of the new article ..." autofocus>
             </label>
-            
             <label for="add-cover-image">
                 <span>Select cover image:</span>
-                <input type="file" src="images/c++.png">
+                <input id="coverImage" type="file">
+                <progress id="progress" value="0" max="100"></progress>
             </label>
             <label for="article-body">
                 <span>Description:</span>
@@ -50,5 +70,7 @@
 
     </main>
 <script src="js/script.js"></script>
+<script src="js/firestore.js"></script>
+<script src="js/newArticle.js"></script>
 </body>
 </html>
