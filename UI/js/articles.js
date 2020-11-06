@@ -45,30 +45,18 @@ const displayArticle = (ARTICLE, ID) => {
             let articleDetails = document.createElement('p');
             articleDetails.classList.add('details');
             let publishDate = new Date(ARTICLE.time.seconds * 1000);
-//-wanna-remove -->    console.log(time);
             articleDetails.innerHTML = `${publishDate.toDateString()} `;
             let hasComments = ARTICLE.comments.length > 1 ? `<span> - ${ARTICLE.comments.length} comments</span>`
                             : ARTICLE.comments.length == 1 ? `<span> - ${ARTICLE.comments.length} comment</span>`
                             : `<span> - No comment</span>`;
             articleDetails.innerHTML = articleDetails.innerHTML + hasComments;
-            //span
-                // span may come up here if needed
         articleText.appendChild(articleDetails);
     article.appendChild(articleText);
         // div.cover-image
         let coverImage = document.createElement('div');
         coverImage.classList.add('cover-image');
             let img = document.createElement('img');
-            // add appropriate img.src to 
-// --->         // for now let be 'images/home-background.png
-
-//------------RISKY---------------
-STORAGE.ref().child(ARTICLE.coverImage).getDownloadURL().then( url => {
-    img.src = url;
-});
-//--------------------------------
-
-            img.src = 'images/home-background.png';
+            img.src = ARTICLE.coverImage;
         coverImage.appendChild(img);
             // div.btns
     article.appendChild(coverImage);
