@@ -35,7 +35,7 @@ form.addEventListener('submit', evt => {
     coverImage: file.name,
     description: description.value.split(/\n{2,}/),
     time: new Date(),
-    comments: {}
+    comments: []
   }).then(() => {
     uploader.value = 0;
     title.value = '';
