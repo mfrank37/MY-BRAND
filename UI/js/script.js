@@ -22,8 +22,7 @@ function confirmDeletePopup({ target }){
   titlePlaceholder.innerHTML = target.parentNode.parentNode.querySelector('.article-text h4').innerHTML;
 
   // add id to the big main btn
-  deleteSection.querySelector('button.big-delete-btn').id = target.id;
-  console.log(deleteSection.querySelector('button.big-delete-btn'));
+  deleteSection.querySelector('button.big-delete-btn').setAttribute('data-delete-article', target.getAttribute('data-article-id'));
   // make visible
   deleteSection.classList.remove('hide');
 }

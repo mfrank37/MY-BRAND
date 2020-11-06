@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/admin.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+    
     <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
@@ -31,74 +51,7 @@
         <hr width="250px">
         
         <div class="all-articles">
-            
-            <div class="article" id="32a23">
-                <div class="article-text">
-                    <h4>7 best services for boosting your developer career</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque blanditiis quibusdam recusandae dolorum al iquid modi pariatur dolores sit consequatur a repellendus numquam cum quae itaque in ratione veritatis sequi!</p>
-                    <p class="details">October 21, 2020<span> - 4 comments</span></p>
-                </div>
-                <div class="cover-image">
-                    <img src="images/home-background.png">
-                </div>
-                <div class="btns">
-                    <a href="view article.html">View</a>
-                    <!-- delete and update button has id for article which are used when deleting or updating process -->
-                    <button id="32a23" type="submit" class="update">Update article</button>
-                    <button id="32a23" class="delete">Delete article</button>
-                </div>
-            </div>
-            <div class="article" id="32a23">
-
-                <div class="article-text">
-                    <h4>2 things for website security enhancing.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque blanditiis quibusdam recusandae dolorum al iquid modi pariatur dolores sit consequatur a repellendus numquam cum quae itaque in ratione veritatis sequi!</p>
-                    <p class="details">October 21, 2020<span> - 4 comments</span></p>
-                </div>
-                <div class="cover-image">
-                    <img src="images/home-background.png">
-                </div>
-                <div class="btns">
-                    <a href="view article.html">View</a>
-                    <!-- delete and update button has id for article which are used when deleting or updating process -->
-                    <button id="32a23" type="submit" class="update">Update article</button>
-                    <button id="32a23" class="delete">Delete article</button>
-                </div>
-            </div>
-            <div class="article" id="32a23">
-                <div class="article-text">
-                    <h4>My happy moments in Web development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque blanditiis quibusdam recusandae dolorum al iquid modi pariatur dolores sit consequatur a repellendus numquam cum quae itaque in ratione veritatis sequi!</p>
-                    <p class="details">October 21, 2020<span> - 4 comments</span></p>
-                </div>
-                <div class="cover-image">
-                    <img src="images/home-background.png">
-                </div>
-                <div class="btns">
-                    <a href="view article.html">View</a>
-                    <!-- delete and update button has id for article which are used when deleting or updating process -->
-                    <button id="32a23" type="submit" class="update">Update article</button>
-                    <button id="32a23" class="delete">Delete article</button>
-                </div>
-            </div>
-            <div class="article" id="32a23">
-
-                <div class="article-text">
-                    <h4>Here is the reason why I learned to programing.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque blanditiis quibusdam recusandae dolorum al iquid modi pariatur dolores sit consequatur a repellendus numquam cum quae itaque in ratione veritatis sequi!</p>
-                    <p class="details">October 21, 2020<span> - 4 comments</span></p>
-                </div>
-                <div class="cover-image">
-                    <img src="images/home-background.png">
-                </div>
-                <div class="btns">
-                    <a href="view article.html">View</a>
-                    <!-- delete and update button has id for article which are used when deleting or updating process -->
-                    <button id="32a23" type="submit" class="update">Update article</button>
-                    <button id="32a23" class="delete">Delete article</button>
-                </div>
-            </div>
-            
+          
         </div>
 
         <div class="confirm-delete-section hide">
@@ -117,5 +70,8 @@
     </main>
 
 <script src="js/script.js"></script>
+<script src="js/firestore.js"></script>
+<script src="js/articles.js"></script>
+
 </body>
 </html>

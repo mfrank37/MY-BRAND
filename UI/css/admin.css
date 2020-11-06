@@ -487,6 +487,10 @@ label input, label textarea{
     font-weight: 600;
     padding-left: 5%;
 }
+.all-articles .article .article-text .details span {
+    color: #808080;
+    font-style: italic;
+}
 .all-articles .article .cover-image {
     margin: auto;
     margin-right: 10px;
@@ -705,6 +709,9 @@ label input, label textarea{
     }
     .all-articles .article .btns {
         margin-left: auto;
+    }
+    .all-articles .article-text {
+        width: 100%;
     }
 
         /* confirm-delete-section */
