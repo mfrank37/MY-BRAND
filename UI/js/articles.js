@@ -30,6 +30,7 @@ const displayArticle = (ARTICLE, ID) => {
     //  div.article
     let article = document.createElement('div');
     article.classList.add('article');
+    article.classList.add(ID);
         // div.article-text
         let articleText = document.createElement('div');
         articleText.classList.add('article-text');
@@ -57,6 +58,7 @@ const displayArticle = (ARTICLE, ID) => {
         coverImage.classList.add('cover-image');
             let img = document.createElement('img');
             img.src = ARTICLE.coverImage;
+            console.log(ARTICLE.coverImage);
         coverImage.appendChild(img);
             // div.btns
     article.appendChild(coverImage);
@@ -79,4 +81,35 @@ const displayArticle = (ARTICLE, ID) => {
         btns.appendChild(deleteButton);
     article.appendChild(btns);
     allArticles.appendChild(article);
+}
+function cancelDeleteArticle() {
+    let deleteSection = document.querySelector('.confirm-delete-section');
+    deleteSection.classList.add('hide');
+}
+function confirmDeletePopup({target}) {
+    let deleteSection = document.querySelector('.confirm-delete-section');
+    // embed the clicked article in the delete popup
+    let titlePlaceholder = deleteSection.querySelector('h2');
+    titlePlaceholder.innerHTML = target.parentNode.parentNode.querySelector('.article-text h4').innerHTML;
+    // add id to the big main btn
+    let bigDeleteButton = deleteSection.querySelector('button.big-delete-btn');
+    bigDeleteButton.setAttribute('data-delete-article', target.getAttribute('data-article-id'));
+    bigDeleteButton.addEventListener('click', deleteArticle);
+    // make visible
+    deleteSection.classList.remove('hide');
+}
+function deleteArticle(evt) {
+    evt.preventDefault();
+    const ID = evt.target.getAttribute('data-delete-article');
+    FIRESTORE.collection('articles')
+            .doc(ID)
+            .delete()
+            .then(() => {
+                console.log('deleted article ', ID);
+                deleteArticleDone(ID);
+            });
+}
+function deleteArticleDone(articleID) {
+    document.querySelector('.'+articleID).remove();
+    cancelDeleteArticle();
 }
