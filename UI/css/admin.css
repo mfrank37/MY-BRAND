@@ -430,6 +430,34 @@ label input, label textarea{
     width: 150px;
     height: 40px;
 }
+.upload-success {
+    min-width: 220px;
+    width: 50vw;
+    min-height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    background: #023A40;
+    color: #00d647;
+    font-size: 17px;
+    position: absolute;
+    top: 60vh;
+    right: 0%;
+    border-radius: 3px;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+}
+.upload-success span {
+    width: 80%;
+}
+.upload-success button {
+    border-radius: 50%;
+    font-weight: 900;
+}
+.upload-success a {
+    color: #a06a07;
+    width: 100%;
+}
 
 /** update article - most for the feature(page) are from .create-article-section */
 .create-article-form label img {
