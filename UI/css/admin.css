@@ -433,30 +433,39 @@ label input, label textarea{
 .upload-success {
     min-width: 220px;
     width: 50vw;
-    min-height: 40px;
+    min-height: 60px;
     padding-top: 10px;
+    align-items: center;
     text-align: center;
     background: #023A40;
     color: #00d647;
+    border: 3px solid #00d647;
     font-size: 17px;
-    position: absolute;
-    top: 60vh;
+    position: fixed;
+    top: 45vh;
     right: 0%;
-    border-radius: 3px;
+    border-radius: 5px;
     z-index: 2;
     display: flex;
     flex-flow: row wrap;
 }
 .upload-success span {
-    width: 80%;
+    width: 70%;
+    margin-left: auto;
 }
 .upload-success button {
+    margin-left: auto;
+    margin-right: 2%;
     border-radius: 50%;
     font-weight: 900;
 }
-.upload-success a {
-    color: #a06a07;
+.upload-success i {
     width: 100%;
+    color: #008b80;
+}
+.upload-success a {
+    color: var(--color5);
+    font-size: 20px;
 }
 
 /** update article - most for the feature(page) are from .create-article-section */
