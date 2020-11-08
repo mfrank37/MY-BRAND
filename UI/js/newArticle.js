@@ -55,7 +55,7 @@ function uploadSuccess(snapshot) {
   uploadArticleSuccess.innerHTML = `<span>Upload complete</span>
                                     <button>X</button>
                                     <i>  Want to 
-                                      <a href="view article.html#${snapshot}">view it ?</a>
+                                      <a href="view article.html#${snapshot.id}">view it ?</a>
                                     </i>`;
   document.body.appendChild(uploadArticleSuccess);
   setTimeout(() => {
