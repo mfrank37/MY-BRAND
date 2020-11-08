@@ -139,7 +139,7 @@ function commentSuccess(posterName, comment) {
     let noComments = commentsView.querySelector('.no-comments');
     commentsView.removeChild(noComments);
   } catch (error) {
-    console.log('You commented first!');
+    console.log('Your comment saved!');
   }
   let commentsView = document.querySelector('.comments-section .comments');
   // div.comment-success
