@@ -13,7 +13,6 @@ coverImage.addEventListener('change', evt => {
 
   uploadTask.then(snapshot => {
     snapshot.ref.getDownloadURL().then(url => imageURL = url );
-    console.log("here : ", snapshot.ref.getDownloadURL());
   });
 
   uploadTask.on('state_changed',
@@ -51,13 +50,13 @@ form.addEventListener('submit', evt => {
 
 // MAKE UPLOAD CONFIRMATION POPUP
 function uploadSuccess(snapshot) {
-  console.log(snapshot);
   let uploadArticleSuccess = document.createElement('div');
   uploadArticleSuccess.classList.add('upload-success');
   uploadArticleSuccess.innerHTML = `<span>Upload complete</span>
                                     <button>X</button>
-                                    <a href="view article.html#${snapshot.id}"> Want to view it ?</a>`;
-  console.log(snapshot.id);
+                                    <i>  Want to 
+                                      <a href="view article.html#${snapshot.id}">view it ?</a>
+                                    </i>`;
   document.body.appendChild(uploadArticleSuccess);
   setTimeout(() => {
     document.body.removeChild(uploadArticleSuccess);
