@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/admin.css">
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+
     <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
@@ -33,26 +53,20 @@
             <label for="article-title">
                 <span>Article title:</span>
                 <input id="article-title" type="text" minlength="2" name="article-title"
-                  placeholder="Title of the new article ..." autofocus value="7 Reasons why I learned programming">
+                  placeholder="Title of the new article ..." autofocus value="" required>
             </label>
-            <label>
+            <label class="current-coverImage">
                 <span>Current cover image:</span>
-                <img src="images/home-background.png">
+                <img src="">
             </label>
             <label for="add-cover-image">
                 <span>Select new cover image:</span>
-                <input type="file" src="images/c++.png">
+                <input id="select-new-coverImage" type="file" src="images/c++.png">
+                <progress value="0" id="update-coverImage-progress" max="100"></progress>
             </label>
             <label for="article-body">
                 <span>Description:</span>
-                <textarea id="article-body" name="article-body" minlength="5" placeholder="description of the new article ...">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laboriosam corrupti, autem iste eius velit iure necessitatibus deserunt consectetur, dignissimos quae temporibus eum ea provident, harum minus? Dignissimos, neque officiis!
-
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laboriosam corrupti, autem iste eius velit iure necessitatibus deserunt consectetur, dignissimos quae temporibus eum ea provident, harum minus? Dignissimos, neque officiis!
-
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laboriosam corrupti, autem iste eius velit iure necessitatibus deserunt consectetur, dignissimos quae temporibus eum ea provident, harum minus? Dignissimos, neque officiis!
-
-                </textarea>
+                <textarea id="article-body" name="article-body" minlength="5" placeholder="description of the new article ..."></textarea>
             </label>
             <div class="create-article-buttons">
                 <button type="submit" class="update-btn">Update</button>
@@ -61,5 +75,8 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis laboriosam
 
     </main>
 <script src="js/script.js"></script>
+<script src="js/firestore.js"></script>
+<script src="js/updateArticle.js"></script>
+
 </body>
 </html>
