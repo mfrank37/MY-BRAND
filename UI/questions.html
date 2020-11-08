@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/admin.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+
     <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
@@ -30,40 +50,14 @@
         <h3>Messages and Questions</h3>
         
         <div class="all-questions">
-            
-            <div class="question">
-                <h4 class="qn-from-who">Facebook Zucker - <span class="email">findme@face.book</span></h4>
-                <span class="date">October 27, 2020</span>
-                <p class="qn">Hello Frank your website looks cool!!! 
-                    <br>How long have you been coding?
-                    <br>Are you available for a new position I think you may fit ? you can DM me on my email.
-                    <br>Or I may go first.
-                </p>
-            </div>
-            <div class="question">
-                <h4 class="qn-from-who">Facebook Zucker - <span class="email">findme@face.book</span></h4>
-                <span class="date">October 27, 2020</span>
-                <p class="qn">Hello Frank your website looks cool!!! 
-                    <br>How long have you been coding?
-                    <br>Are you available for a new position I think you may fit ? you can DM me on my email.
-                    <br>Or I may go first.
-                </p>
-            </div>
-            <div class="question">
-                <h4 class="qn-from-who">Facebook Zucker - <span class="email">findme@face.book</span></h4>
-                <span class="date">October 27, 2020</span>
-                <p class="qn">Hello Frank your website looks cool!!! 
-                    <br>How long have you been coding?
-                    <br>Are you available for a new position I think you may fit ? you can DM me on my email.
-                    <br>Or I may go first.
-                </p>
-            </div>
-            
+                    
         </div>
 
     </main>
     
 
 <script src="js/script.js"></script>
+<script src="js/firestore.js"></script>
+<script src="js/questions.js"></script>
 </body>
 </html>

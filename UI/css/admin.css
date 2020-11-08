@@ -640,6 +640,7 @@ label input, label textarea{
     padding-left: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    min-width: 85%;
 }
 .question {
     padding: 5px;
