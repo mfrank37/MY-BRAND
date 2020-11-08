@@ -162,10 +162,18 @@ justify-content: center;
 .comments .comment p {
     margin-top: unset;
 }
+@keyframes blinke {
+    0% { background-color: inherit; }
+    23% { background-color:  #adad; }
+    100% { background-color: inherit; }
+}
+.comment-success {
+    animation: blinke 2.3s linear 0s 3;
+}
 .comments-section .add-comment {
-    max-width: 600px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
