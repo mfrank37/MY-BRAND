@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+
     <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
@@ -32,52 +52,16 @@
          <!-- VIEW ARTICLE -->
         <article class="article-view">
             <div class="header">
-                <h1>10 Pro tips for website security enhancing.</h1>
+                <h1></h1>
                 <p>
-                    Published: <span class="date">Oct 19, 2020</span>
+                    Published: <span class="date"></span>
                 </p>
             </div>
             <div class="article-image">
-                <img src="images/home-background.png">
+                <img src="" alt='article Cover image'>
             </div>
             <div class="description">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
-                    iquid modi pariatur dolores sit consequatur a repellendus
-                    numquam cum quae itaque in ratione veritatis sequi!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
-                    iquid modi pariatur dolores sit consequatur a repellendus
-                    numquam cum quae itaque in ratione veritatis sequi!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
-                    iquid modi pariatur dolores sit consequatur a repellendus
-                    numquam cum quae itaque in ratione veritatis sequi!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
-                    iquid modi pariatur dolores sit consequatur a repellendus
-                    numquam cum quae itaque in ratione veritatis sequi!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
-                    iquid modi pariatur dolores sit consequatur a repellendus
-                    numquam cum quae itaque in ratione veritatis sequi!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vel, doloremque blanditiis quibusdam recusandae dolorum al
-                    iquid modi pariatur dolores sit consequatur a repellendus
-                    numquam cum quae itaque in ratione veritatis sequi!
-                </p>
-                
+            
             </div>
         </article>
 
@@ -86,26 +70,8 @@
             
             <h2>Comments</h2>
             <div class="comments">
-                <div class="comment">
-                    <h5>
-                        John Doe - <span class="date">Oct 18, 2020</span>
-                    </h5>
-                    <p>
-                        I really enjoyed this article. 
-                        I totally agree with you 100% on the paragraph 2,
-                        but why does it have to be .......... one the paragraph 3. 
-                        I just think it would a good idea to ....
-                    </p>
-                </div>
-                <div class="comment">
-                    <h5>John Doe - <span class="date">Oct 18, 2020</span>
-                    </h5>
-                    <p>I really enjoyed this article. 
-                        I totally agree with you 100% on the paragraph 2,
-                        but why does it have to be .......... one the paragraph 3. 
-                        I just think it would a good idea to ....
-                    </p>
-                </div>
+                <p class="no-comments">No comments yet! Be the first to comment. :)</p>
+
             </div>
             <div class="add-comment"><!-- new comment -->
                 <h4>Say something</h4>
@@ -121,27 +87,12 @@
         <!-- articles here should be more like from BLOG (blog page) but less spacious -->
         <div class="more-articles">
             <h2>You may also like to read</h2>
-            <a class="article" href="#">
-                <div class="article-description">
-                    <h3>10 Pro tips for website security enhancing that every developer should see</h3>
-                    <h5 class="publish-date">Published <span>October 5 </span></h5>
-                </div>
-                <div class="article-image">
-                    <img src="images/home-background.png" alt="image">
-                </div>
-            </a>
-            <a class="article" href="#">
-                <div class="article-description">
-                    <h3>10 Pro tips for website security enhancing that every developer should see</h3>
-                    <h5 class="publish-date">Published <span>October 5 </span></h5>
-                </div>
-                <div class="article-image">
-                    <img src="images/home-background.png" alt="image">
-                </div>
-            </a>
+            
         </div>
     </main>
 
     <script src="js/script.js"></script>
+    <script src="js/firestore.js"></script>
+    <script src="js/viewArticle.js"></script>
 </body>
 </html>
