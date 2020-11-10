@@ -500,6 +500,32 @@ nav li a:hover {
     text-align: center;
     color: cadetblue;
 }
+.upload-success {
+    min-width: 220px;
+    width: 50vw;
+    min-height: 40px;
+    text-align: center;
+    background: #023A40;
+    transition: background-color 1s;
+    color: #00d647;
+    border: 3px solid #00d647;
+    font-size: 17px;
+    position: fixed;
+    top: 60vh;
+    right: 0%;
+    border-radius: 3px;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    height: 75px;
+}
+.upload-success span {
+    width: 80%;
+}
+.upload-success button {
+    border-radius: 50%;
+    font-weight: 900;
+}
 
 
 

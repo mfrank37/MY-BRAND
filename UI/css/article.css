@@ -150,6 +150,13 @@ justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
 }
+@keyframes comment-success {
+    0% { background-color: #00AA2255; }
+    100% { background-color: inherit; }
+}
+.comment-success {
+    animation: comment-success 1.7s ease-in 0.4s 3;
+}
 .comments .comment h5 {
     margin-bottom: unset;
     padding-left: 25px;
@@ -220,9 +227,6 @@ justify-content: center;
 .article-view-section .more-articles > h3 {
     color: var(--color3);
 }
-.more-articles .article {
-    padding-left: 20px;
-}
 .more-articles {
     min-width: 250px;
     max-width: 650px;
@@ -240,6 +244,12 @@ justify-content: center;
     flex-wrap: nowrap;
     justify-content: space-between;
     text-decoration: none;
+    cursor: pointer;
+}
+.more-articles .article-description span {
+    font-style: italic;
+    font-weight: 600;
+    color: #003;
 }
 .more-articles .article .article-image {
     max-width: 100px;
