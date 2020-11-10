@@ -430,6 +430,43 @@ label input, label textarea{
     width: 150px;
     height: 40px;
 }
+.upload-success {
+    min-width: 220px;
+    width: 50vw;
+    min-height: 60px;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    background: #023A40;
+    color: #00d647;
+    border: 3px solid #00d647;
+    font-size: 17px;
+    position: fixed;
+    top: 45vh;
+    right: 0%;
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+}
+.upload-success span {
+    width: 70%;
+    margin-left: auto;
+}
+.upload-success button {
+    margin-left: auto;
+    margin-right: 2%;
+    border-radius: 50%;
+    font-weight: 900;
+}
+.upload-success i {
+    width: 100%;
+    color: #008b80;
+}
+.upload-success a {
+    color: var(--color5);
+    font-size: 20px;
+}
 
 /** update article - most for the feature(page) are from .create-article-section */
 .create-article-form label img {
@@ -486,6 +523,10 @@ label input, label textarea{
     color: var(--color3);
     font-weight: 600;
     padding-left: 5%;
+}
+.all-articles .article .article-text .details span {
+    color: #808080;
+    font-style: italic;
 }
 .all-articles .article .cover-image {
     margin: auto;
@@ -705,6 +746,9 @@ label input, label textarea{
     }
     .all-articles .article .btns {
         margin-left: auto;
+    }
+    .all-articles .article-text {
+        width: 100%;
     }
 
         /* confirm-delete-section */
