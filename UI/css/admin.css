@@ -430,11 +430,22 @@ label input, label textarea{
     width: 150px;
     height: 40px;
 }
-.upload-success {
+@keyframes required-field {
+    0% {
+        background-color: #BF280635;
+    }
+    100% {
+        background-color: initial;
+        color: #BF2806;
+    }
+}
+.notify-required-field {
+    animation: required-field 1.7s linear 0s 2;
+}
+.upload-success, .error-message {
     min-width: 220px;
     width: 50vw;
     min-height: 60px;
-    padding-top: 10px;
     align-items: center;
     text-align: center;
     background: #023A40;
@@ -449,11 +460,16 @@ label input, label textarea{
     display: flex;
     flex-flow: row wrap;
 }
-.upload-success span {
+.error-message {
+    background: #BF2806CC;
+    color:  white;
+    border: 3px solid white;
+}
+.upload-success span, .error-message span {
     width: 70%;
     margin-left: auto;
 }
-.upload-success button {
+.upload-success button, .error-message button {
     margin-left: auto;
     margin-right: 2%;
     border-radius: 50%;
