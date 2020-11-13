@@ -121,6 +121,10 @@ nav li a:hover {
 .last-post-date {
     color: orange;
 }
+.reminder .my-notes {
+    max-height: 60vh;
+    overflow: auto;
+}
 .to-do .my-notes p {
     border-bottom: 1px solid #008b80;
 }
@@ -141,6 +145,7 @@ nav li a:hover {
     background-color: #5B6B86;
     width: 200px;
     border: 3px solid limegreen;
+    max-height: 240px;
 }
 .reminder .profile-status > * {
     border-bottom: 1px solid #023A40;
@@ -165,6 +170,10 @@ nav li a:hover {
 .profile-status .not-ok {
     background: #BF2806;
     color: white;
+}
+.reminder .subscribers {
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 /** update-profile-page */
