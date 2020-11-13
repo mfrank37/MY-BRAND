@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/admin.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+
     <title>Frank MUNGERI - FullStack Web Developer</title>
 </head>
 <body>
@@ -21,7 +41,7 @@
             <li><a href="signin.html">SIGNOUT</a></li>
         </ul>
         <div class="admin-profile" onclick="toggleNav()">
-            <img src="images/profile_everywhere.jpg" alt="Profile picture icon">
+            <img src="">
         </div>
     </nav><!--navigation-->
 
@@ -61,9 +81,10 @@
             <h3>Profile picture</h3>
             <div class="profile-picture">
                 <p>Current profile picture</p>
-                <img src="images/profile_everywhere.jpg" alt="current profile picture">
+                <img src="" alt="Profile picture">
                 <label for="open-profile-picture">
                     <span>open new</span>
+                    <progress value="0" max="100" id="avatar-progress"></progress>
                     <input type="file" id="open-profile-picture" name="open-profile-picture" class="open-profile-picture" accept="image/png, image/jpeg">
                 </label>
             </div>
@@ -73,42 +94,12 @@
             <div class="skills">
                 <div class="current-skills">
                 
-                    <div class="skill">
-                        <img alt="HTML5" src='images/skills/html5.png'>
-                        <h4>HTML5</h4>
-                        <button>remove</button>
-                    </div>
-                   <div class="skill">
-                        <img alt="CSS3" src='images/skills/css3-logo.png'>
-                        <h4>CSS3</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="skill">
-                        <img alt="JAVASCRIPT" src='images/skills/javascript.png'>
-                        <h4>JAVASCRIPT</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="skill">
-                        <img alt="C++" src='images/skills/c++.png'>
-                        <h4>C++</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="skill">
-                        <img alt="PYTHON3" src='images/skills/python.png'>
-                        <h4>PYTHON3</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="skill">
-                        <img alt="REACT" src='images/skills/react.png'>
-                        <h4>REACT</h4>
-                        <button>remove</button>
-                    </div>
-                    
                 </div>
                 <div class="add-skill">
                     <h5>Add skill</h5>
                     <label for="skill-logo">
                         <span>Choose skill logo:</span>
+                        <progress value="0" max="100" id="skill-progress"></progress>
                         <input type="file" id="skill-logo" name="skill-logo">
                     </label>
                     <label for="skill-name">
@@ -124,42 +115,12 @@
             <div class="projects">
                 <div class='projects-board'>
                 
-                    <div class="project">
-                        <img src="images/projects/battery-status.png" alt="BATTERY STATUS">
-                        <h3 class='project-title'>BATTERY STATUS</h3>
-                        <button>remove</button>
-                    </div>
-                    <div class="project">
-                        <img src="images/projects/city-info.png" alt="CITY INFO">
-                        <h3 class='project-title'>CITY INFO</h3>
-                        <button>remove</button>
-                    </div>
-                    <div class="project">
-                        <img src="images/projects/tasks-manager.png" alt="TASKS MANAGER">
-                        <h3 class='project-title'>TASKS MANAGER</h3>
-                        <button>remove</button>
-                    </div>
-                    <div class="project">
-                        <img src="images/projects/animal-survey.png" alt="ANIMAL SURVEYOR">
-                        <h3 class='project-title'>ANIMAL SURVEY</h3>
-                        <button>remove</button>                        
-                    </div>
-                    <div class="project">
-                        <img src="images//projects/auto-meet.png" alt="AUTO-MEET">
-                        <h3 class='project-title'>AUTO-MEET</h3>
-                        <button>remove</button>
-                    </div>
-                    <div class="project">
-                        <img src="images/projects/solar-view.png" alt="SOLAR VIEW">
-                        <h3 class='project-title'>SOLAR VIEW</h3>
-                        <button>remove</button>
-                    </div>
-                    
                 </div>
                 <div class="add-project">
                     <h5>Add project</h5>
                     <label for="project-logo">
                         <span>Choose project logo:</span>
+                        <progress value="0" max="100" id="project-progress"></progress>
                         <input type="file" id="project-logo" name="project-logo">
                     </label>
                     <label for="project-name">
@@ -178,53 +139,13 @@
             <h3>Experiences</h3>
             <div class="experiences">
                 <div class='experience-board'>
-                    <div class="experience">
-                        <img src="images/experience/andela-logo.jpg" alt="Andela">
-                        <h4 class="lifetime">Sept 2020 - Present</h4>
-                        <h4 class='position'>FullStack Web developer</h4>
-                        <h4 class="company"> at Andela</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="experience">
-                        <img src="images/experience/linkedIn.png" alt="LinkedIn">
-                        <h4 class="lifetime">Jan - Aug 2020</h4>
-                        <h4 class='position'>Front-end developer</h4>
-                        <h4 class="company"> at LinkedIn</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="experience">
-                        <img src="images/experience/facebook.png" alt="Facebook">
-                        <h4 class="lifetime">Jan-Dec 2019</h4>
-                        <h4 class='position'>React developer</h4>
-                        <h4 class="company"> at Facebook</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="experience">
-                        <img src="images/experience/facebook.png" alt="Facebook">
-                        <h4 class="lifetime">Feb-Dec 2018</h4>
-                        <h4 class='position'>Designer</h4>
-                        <h4 class="company"> at Facebook</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="experience">
-                        <img src="images//experience/twitter.png" alt="Twitter">
-                        <h4 class="lifetime">2016-2018</h4>
-                        <h4 class='position'>Back-End developer</h4>
-                        <h4 class="company"> at Twitter</h4>
-                        <button>remove</button>
-                    </div>
-                    <div class="experience">
-                        <img src="images/experience/github.png" alt="GitHub">
-                        <h4 class="lifetime">2013 - 2015</h4>
-                        <h4 class='position'>Back-End developer</h4>
-                        <h4 class="company"> at GitHub</h4>
-                        <button>remove</button>
-                    </div>    
+                
                 </div>
                 <div class="add-experience">
                     <h5>Add experience</h5>
                     <label for="experience-logo">
                         <span>Choose experience logo:</span>
+                        <progress value="0" max="100" id="experience-progress"></progress>
                         <input type="file" id="experience-logo" name="experience-logo">
                     </label>
                     <label for="experience-lifetime">
@@ -248,38 +169,19 @@
             <div class="social-links">
 
                 <div class='contact-list'>
-                    <div class="contact">
-                        <a href='mailto:frankm@frankm.com'><img src="images/contacts/mail.png"></a>
-                        <a class="link" href='mailto:frankm@frankm.com'>
-                            <span>frankm@frankm.com</span>
-                            <button>remove</button>
-                        </a>
-                    </div>
-                    <div class="contact">
-                        <a href='https://www.linkedin.com/in/mungeri-frank-13544a185/'><img src="images/contacts/linkedIn.png"></a>
-                        <a class="link" href='https://www.linkedin.com/in/mungeri-frank-13544a185/'>
-                            <span>linkedin.com/in/mungeri-frank-13544a185/</span>
-                            <button>remove</button>
-                        </a>
-                    </div>
-                    <div class="contact">
-                        <a href='https://github.com/mfrank37'><img src="images/contacts/github.png"></a>
-                        <a class="link" href='https://github.com/mfrank37'>
-                            <span>github.com/mfrank37</span>
-                            <button>remove</button>
-                        </a>
-                    </div>
+                    
                 </div>
                 <!-- add new link -->
                 <div class="add-link">
                     <h5>Add link</h5>
                     <label for="link-icon">
                         <span>add link logo</span>
+                        <progress value="0" max="100" id="icon-progress"></progress>
                         <input type="file" id="link-icon" name="link-icon" class='link-icon'>
                     </label>
                     <label for="url">
                         <span>add link url</span>
-                        <input type="url" id="url" name="url" class="url">
+                        <input type="url" id="url" name="url" class="url" placeholder="https://">
                     </label>
                     <button id="add-new-link" class="add-new-link">Add new link</button>
                 </div>
@@ -313,12 +215,14 @@
 
             <!-- update button -->
             <div class="update-button">
-                <button type="submit" class="update-btn">Update</button>
+                <button id="update-button" type="submit" class="update-btn">Update</button>
             </div>
 
         </form>
 
     </main>
 <script src="js/script.js"></script>
+<script src="js/firestore.js"></script>
+<script src="js/profile.js"></script>
 </body>
 </html>
