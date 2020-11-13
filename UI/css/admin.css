@@ -83,10 +83,98 @@ nav li a:hover {
     border-radius: 50%;
 }
 
+
+
+
 /** admin-home */
-
-
-
+.admin-home-header {
+    color: var(--color1);
+    text-align: center;
+}.admin-home {
+    background-color: var(--color1);
+    color: white;
+    margin: unset;
+    padding: 15px;
+}
+.reminder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;    
+}
+.to-do {
+    border: 3px solid white;
+    max-width: 400px;
+    padding: 3px;
+}
+.to-do > h3 {
+    color: var(--color5);
+    text-align: center;
+}
+.to-do a {
+    text-decoration: none;
+    color: #00d647;
+}
+.to-do .default-notes {
+    background: var(--color9);
+    padding: 5px;
+}
+.last-post-date {
+    color: orange;
+}
+.reminder .my-notes {
+    max-height: 60vh;
+    overflow: auto;
+}
+.to-do .my-notes p {
+    border-bottom: 1px solid #008b80;
+}
+.to-do .add-note input {
+    width: 72%;
+    height: 30px;
+    border-radius: 3px;
+}
+.to-do .add-note button {
+    width: 25%;
+    margin: auto;
+    height: 30px;
+    border-radius: 3px;
+    background: #008b80;
+    color: white;
+}
+ .reminder .profile-status {
+    background-color: #5B6B86;
+    width: 200px;
+    border: 3px solid limegreen;
+    max-height: 240px;
+}
+.reminder .profile-status > * {
+    border-bottom: 1px solid #023A40;
+    height: 25px;
+    margin: unset;
+}
+.profile-status > h3 {
+    color: var(--color11);
+    text-align: center;
+}
+.profile-status p {
+    padding-left: 10px;
+}
+.profile-status span {
+    float: right;
+    padding-right: 10px;
+}
+.profile-status .ok {
+    background-color: #00d647;
+    color: white;
+}
+.profile-status .not-ok {
+    background: #BF2806;
+    color: white;
+}
+.reminder .subscribers {
+    max-height: 70vh;
+    overflow-y: auto;
+}
 
 /** update-profile-page */
 .update-profile-section {

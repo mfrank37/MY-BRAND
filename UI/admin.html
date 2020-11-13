@@ -45,12 +45,60 @@
             <img src="images/profile_everywhere.jpg" alt="Profile picture icon">
         </div>
     </nav><!--navigation-->
+    
+    <h1 class="admin-home-header">HOME</h1>
     <main class="admin-home">
+        <div class="reminder">
+                <!-- reminds the owner to fill profile -->
+            <div class="profile-status">
+                <h3>PROFILE STATUS</h3>
+                <p class="name-status">Names</p>
+                <p class="profession-status">Profession</p>
+                <p class="about-status">About</p>
+                <p class="avatar-status">Profile picture</p>
+                <p class="skill-status">3+ Skills</p>
+                <p class="project-status">1+ Projects</p>
+                <p class="experience-status">1+ Experience</p>
+                <p class="address-status">Address</p>
+            </div>
+                <!-- to-do -->
+            <div class="to-do">
+                <h3>TO-DO REMINDERS</h3>
+                <!-- add new-skill(s) -->
+                <div class="default-notes">
+                    <p class="new-skill">
+                        Learned a new skill? <a href="profile.html">Update your profile</a>
+                    </p>
+                        <!-- add new project -->
+                    <p class="new-project">
+                        Have a new project ? <a href="profile.html">Update your profile</a>
+                    </p>
+                        <!-- post new-article -->
+                    <p class="new-article">
+                        Want to post new article ? <a href="new article.html">Post new article</a>
+                    </p>
+                </div>
+                <div class="my-notes">
+                   
+                </div>
+                <form class="add-note" action="#" method="POST">
+                    <input type="text" name="add-note" id="add-note">
+                    <button type="submit">Add note</button>
+                </form>
+            </div>
+    
+            <!-- subscriptions -->
+            <div class="subscribers">
+                <h4>SUBSCRIBERS</h4>
 
+            </div>
+        
+        </div>
 
     </main>
 <script src="js/firestore.js"></script>
 <script src="js/authenticate.js"></script>
 <script src="js/script.js"></script>
+<script src="js/dashboard.js"></script>
 </body>
 </html>
