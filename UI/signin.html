@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signin.css">
-    <title>Frank MUNGERI - Signin</title>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- storage -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <!-- auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- realtime-database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <!-- performance monitoring -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-performance.js"></script>
+    <!-- messaging -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script>
+
+    <title>Signin</title>
 </head>
 <body>
     <!------------ navigation -------------------->
     <nav class="nav">
-        <div class="banner">
-            Frank M
-        </div>
         <a href="index.html">HOME</a>
     </nav><!--navigation-->
     
@@ -20,11 +37,14 @@
         <hr width="150px" />
         <input type="email" required autocomplete="email" name="email" placeholder="email" autofocus>
         <input type="password" required name="password" placeholder="password">
+        <span class="login-error-message"></span>
         <label>
             <input type="checkbox" id="remember-me" name="remember-me"><span>Remember me.</span>
         </label>
         <button type="submit">signin</button>
     </form>
 
+    <script src="js/firestore.js"></script>
+    <script src="js/signin.js"></script>
 </body>
 </html>

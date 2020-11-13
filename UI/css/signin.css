@@ -50,8 +50,6 @@ button {
     margin: auto;
     text-decoration: none;
     color: var(--color4);
-    position: absolute;
-    left: 47%;
 }
 .nav > a:hover {
     color: var(--color1);
@@ -115,4 +113,10 @@ button {
     background-color: var(--color11);
     color: white;
     font-size: 18px;
+}
+.login-error-message {
+    text-align: center;
+    color:  #BF2806;
+    margin-left: 10%;
+    margin-right: 10%;
 }
